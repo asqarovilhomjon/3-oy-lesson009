@@ -1,0 +1,45 @@
+.header {
+    .navbar {
+        height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    img {
+        max-width: 236px;
+      }
+    .navbar__collection {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      list-style: none;
+      .navbar__item {
+        font-family: Barlow;
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 15px;
+        letter-spacing: 0.9230769276618958px;
+        color: #83888F;
+        &:hover {
+          color: black;
+        }
+        &:active{
+          transform: scale(.9);
+        }
+      }
+    }
+    .navbar__select {
+      display: none;
+    }
+  }
+  }
+  @media (max-width:700px) {
+    .header{
+      .navbar{
+        .navbar__select {
+          display: block;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  
